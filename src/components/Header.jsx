@@ -1,8 +1,12 @@
+import logo from "../assets/logo.png";
+import Navigation from "./Navigation";
+import '../styles/Header.css';
 
 function Header() {
   return (
     <header>
-      <h1>My App</h1>
+      <img src={logo} alt="kasa" className="kasa-logo" />
+      <Navigation/>
     </header>
   );
 }

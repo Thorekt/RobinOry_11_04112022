@@ -11,13 +11,15 @@ import ErrorPage from "./pages/ErrorPage";
 function App() {
   return (
     <Router>
-      <Header />
-      <Routes>
-        <Route index element={<Home />}></Route>
-        <Route path="/about" element={<About />}></Route>
-        <Route path="/housing" element={<HoussingSheet />}></Route>
-        <Route path="*" element={<ErrorPage />}></Route>
-      </Routes>
+      <div className="layout">
+        <Header />
+        <Routes>
+          <Route index element={<Home />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/housing" element={<HoussingSheet />}></Route>
+          <Route path="*" element={<ErrorPage />}></Route>
+        </Routes>
+      </div>
       <Footer />
     </Router>
   );

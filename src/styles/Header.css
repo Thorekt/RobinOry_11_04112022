@@ -1,0 +1,9 @@
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header img {
+  width: 210px;
+  height: 68px;
+}
