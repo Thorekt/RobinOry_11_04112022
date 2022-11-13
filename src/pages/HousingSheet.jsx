@@ -1,8 +1,10 @@
+import React from "react";
+
 function HoussingSheet(){
     return (
-        <div>
+        <React.Fragment>
             <h1>HoussingSheet</h1>
-        </div>
+        </React.Fragment>
     );
 }
 

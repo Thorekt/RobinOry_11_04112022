@@ -1,9 +1,12 @@
+
+import React from "react";
+
 function ErrorPage() {
   return (
-    <div>
+    <React.Fragment>
       <h1>404</h1>
       <p>Page not found.</p>
-    </div>
+    </React.Fragment>
   );
 }
 
