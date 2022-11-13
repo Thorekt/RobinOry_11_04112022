@@ -16,7 +16,7 @@ function HoussingSheet(){
             <span></span>
             <div className="information">
                 <Collapse name="Description" content={logement.description}/>
-                <Collapse name="Equipements" content={logement.equipements}/>
+                <Collapse name="Equipements" content={logement.equipments}/>
             </div>
         </React.Fragment>
     );
