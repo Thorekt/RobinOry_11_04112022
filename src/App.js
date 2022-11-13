@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import HoussingSheet from "./pages/HoussingSheet";
+import HoussingSheet from "./pages/Houssing";
 import ErrorPage from "./pages/ErrorPage";
 
 function App() {

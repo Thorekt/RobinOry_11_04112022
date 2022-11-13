@@ -1,6 +1,8 @@
-.collapse {
+.collapse,
+.collapse.open {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 .collapse .name {
@@ -41,4 +43,5 @@
 .collapse .content p {
   margin: 0;
   padding: 0;
+  overflow: break-word;
 }
