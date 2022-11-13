@@ -14,10 +14,10 @@ function App() {
       <div className="layout">
         <Header />
         <Routes>
-          <Route index element={<Home />}></Route>
-          <Route path="/about" element={<About />}></Route>
-          <Route path="/houssing/:logmentId" element={<HoussingSheet />}></Route>
-          <Route path="*" element={<ErrorPage />}></Route>
+          <Route index element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/houssing/:logementId" element={<HoussingSheet />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </div>
       <Footer />
