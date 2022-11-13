@@ -1,12 +1,15 @@
 
 import React from "react";
+import { Link } from "react-router-dom";
+import '../styles/Error.css';
 
 function ErrorPage() {
   return (
-    <React.Fragment>
+    <div className="error">
       <h1>404</h1>
-      <p>Page not found.</p>
-    </React.Fragment>
+      <span>Oups! La page que vous demandez n'existe pas.</span>
+      <Link to="/">Retourner sur la page d’accueil</Link>
+    </div>
   );
 }
 
