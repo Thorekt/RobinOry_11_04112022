@@ -8,7 +8,7 @@ function ThumbList(){
     return (
         <div className='thumbList'>
             {logementList.map((logement) => (
-                <Link to={`/housing/${logement.id}`}><Thumb key={logement.id} logement={logement} /></Link>
+                <Link to={`/houssing/${logement.id}`}><Thumb key={logement.id} logement={logement} /></Link>
             ))}
         </div>
     );

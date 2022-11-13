@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import HoussingSheet from "./pages/HousingSheet";
+import HoussingSheet from "./pages/HoussingSheet";
 import ErrorPage from "./pages/ErrorPage";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route index element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>
-          <Route path="/housing/:logmentId" element={<HoussingSheet />}></Route>
+          <Route path="/houssing/:logmentId" element={<HoussingSheet />}></Route>
           <Route path="*" element={<ErrorPage />}></Route>
         </Routes>
       </div>
