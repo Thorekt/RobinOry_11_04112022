@@ -1,5 +1,4 @@
 
-
 function Thumb({logement}) {
 
     return(<div className="thumb">
