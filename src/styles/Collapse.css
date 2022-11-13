@@ -1,0 +1,44 @@
+.collapse {
+  display: flex;
+  flex-direction: column;
+}
+
+.collapse .name {
+  color: #ffffff;
+  background-color: #ff6060;
+  border-radius: 10px;
+  height: 47px;
+  position: relative;
+}
+
+.collapse .name:hover {
+  cursor: pointer;
+}
+
+.collapse .name span {
+  position: absolute;
+  left: 18px;
+  top: 9px;
+  font-size: 24px;
+}
+
+.collapse .name img {
+  position: absolute;
+  right: 18px;
+  top: 15px;
+}
+
+.collapse .content {
+  background-color: #f6f6f6;
+  color: #ff6060;
+  font-size: 18px;
+  margin-top: -1em;
+  padding-top: 27px;
+  padding: 27px 18px 18px 18px;
+  border-radius: 5px;
+}
+
+.collapse .content p {
+  margin: 0;
+  padding: 0;
+}

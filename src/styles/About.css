@@ -1,0 +1,6 @@
+.about {
+  margin: 0px 226px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
