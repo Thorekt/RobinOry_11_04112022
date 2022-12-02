@@ -10,6 +10,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  top: 38%;
 }
 
 .slideshow .control img {

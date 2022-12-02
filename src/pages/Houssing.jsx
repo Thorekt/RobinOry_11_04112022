@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import Collapse from "../components/Collapse.jsx";
 import Slideshow from "../components/Slideshow.jsx";
 import {logementList} from '../datas/logements.js';
@@ -10,17 +10,26 @@ function HoussingSheet(){
 
     const logement = logementList.find((logement) => logement.id === logementId);
 
-    return (
-        <React.Fragment>
-            <Slideshow pictures={logement.pictures}/>
-            <h1>{logement.title}</h1>
-            <span></span>
-            <div className="information">
-                <Collapse name="Description" content={logement.description}/>
-                <Collapse name="Equipements" content={logement.equipments}/>
-            </div>
-        </React.Fragment>
-    );
+
+    if(logement !== undefined){
+        return (
+            <React.Fragment>
+                <Slideshow pictures={logement.pictures}/>
+                <h1>{logement.title}</h1>
+                <span></span>
+                <div className="information">
+                    <Collapse name="Description" content={logement.description}/>
+                    <Collapse name="Equipements" content={logement.equipments}/>
+                </div>
+            </React.Fragment>
+        );
+    }else{
+        return (
+            <React.Fragment>
+            <Navigate to="/404" replace={true} />
+            </React.Fragment>
+        );
+    }
 }
 
 export default HoussingSheet;
