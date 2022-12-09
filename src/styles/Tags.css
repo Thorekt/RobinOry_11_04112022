@@ -1,0 +1,18 @@
+.tags {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.tags span {
+  width: 115px;
+  height: 25px;
+  background-color: #ff6060;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
