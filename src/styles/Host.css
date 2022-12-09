@@ -1,0 +1,17 @@
+.host {
+  display: flex;
+  gap: 10px;
+}
+
+.host span {
+  align-self: center;
+  text-align: right;
+  font-size: 18px;
+  word-break: normal;
+  width: min-content;
+}
+
+.host img {
+  border-radius: 1000px;
+  width: 64px;
+}

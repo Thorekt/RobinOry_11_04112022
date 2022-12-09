@@ -2,6 +2,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  color: #ff6060;
 }
 
-
+.information_right {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
