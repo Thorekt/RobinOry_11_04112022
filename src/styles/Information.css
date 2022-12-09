@@ -5,8 +5,23 @@
   color: #ff6060;
 }
 
+.information_left,
 .information_right {
   display: flex;
   flex-direction: column;
+}
+
+.information_left {
+}
+.information_left h1 {
+  margin: 0px;
+  font-size: 36px;
+}
+.information_left span {
+  font-size: 18px;
+}
+
+.information_right {
   align-items: end;
+  gap: 24px;
 }
