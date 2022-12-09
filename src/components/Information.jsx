@@ -1,5 +1,6 @@
 import Rating from "./Rating";
 import Tags from "./Tags";
+import Host from "./Host";
 import "../styles/Information.css";
 
 function information({ logement }) {
@@ -12,6 +13,7 @@ function information({ logement }) {
         <Tags tags={logement.tags} />
       </div>
       <div className="information_right">
+        <Host host={logement.host} />
         <Rating rating={logement.rating} />
       </div>
     </div>
