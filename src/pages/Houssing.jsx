@@ -2,6 +2,7 @@ import React from "react";
 import { useParams, Navigate } from 'react-router-dom';
 import Collapse from "../components/Collapse.jsx";
 import Slideshow from "../components/Slideshow.jsx";
+import Information from "../components/Information.jsx";
 import {logementList} from '../datas/logements.js';
 import "../styles/Houssing.css";
 
@@ -15,9 +16,8 @@ function HoussingSheet(){
         return (
             <React.Fragment>
                 <Slideshow pictures={logement.pictures}/>
-                <h1>{logement.title}</h1>
-                <span></span>
-                <div className="information">
+                <Information logement={logement}/>
+                <div className="detail">
                     <Collapse name="Description" content={logement.description}/>
                     <Collapse name="Equipements" content={logement.equipments}/>
                 </div>
@@ -26,7 +26,7 @@ function HoussingSheet(){
     }else{
         return (
             <React.Fragment>
-            <Navigate to="/404" replace={true} />
+                <Navigate to="/404" replace={true} />
             </React.Fragment>
         );
     }

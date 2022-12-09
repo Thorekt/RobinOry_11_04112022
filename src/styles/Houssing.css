@@ -1,9 +1,9 @@
-.information {
+.detail {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.information .collapse {
+.detail .collapse {
   width: 49%;
 }
