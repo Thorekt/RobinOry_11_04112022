@@ -2,10 +2,17 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 2.5em;
+  justify-content: space-between;
+  gap: 30px;
   padding: 3em;
   background-color: #f6f6f6;
   border-radius: 25px;
+}
+
+.thumbList::after {
+  content: "";
+  gap: 60px;
+  flex: auto;
 }
 
 .thumb {

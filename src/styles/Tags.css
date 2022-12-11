@@ -11,7 +11,7 @@
   background-color: #ff6060;
   border-radius: 10px;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 14px !important;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,17 +1,15 @@
-import Thumb from './Thumb';
-import {logementList} from '../datas/logements.js';
-import '../styles/ThumbList.css';
-import { Link } from 'react-router-dom';
+import Thumb from "./Thumb";
+import { logementList } from "../datas/logements.js";
+import "../styles/ThumbList.css";
 
-function ThumbList(){
-
-    return (
-        <div className='thumbList'>
-            {logementList.map((logement) => (
-                <Link to={`/houssing/${logement.id}`}><Thumb key={logement.id} logement={logement} /></Link>
-            ))}
-        </div>
-    );
+function ThumbList() {
+  return (
+    <div className="thumbList">
+      {logementList.map((logement) => (
+        <Thumb key={logement.id} logement={logement} />
+      ))}
+    </div>
+  );
 }
 
 export default ThumbList;
