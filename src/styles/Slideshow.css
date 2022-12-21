@@ -31,9 +31,13 @@
 @media (max-width: 1270px) {
   .slideshow {
     height: 335px;
+    border-radius: 10px;
   }
   .slideshow .control img {
     width: 24px;
+  }
+  .slideshow .slide {
+    border-radius: 10px;
   }
 }
 
