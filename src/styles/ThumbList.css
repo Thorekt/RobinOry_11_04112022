@@ -4,15 +4,16 @@
   flex-direction: row;
   justify-content: space-between;
   gap: 30px;
-  padding: 3em;
   background-color: #f6f6f6;
   border-radius: 25px;
 }
 
-.thumbList::after {
-  content: "";
-  gap: 60px;
-  flex: auto;
+@media (min-width: 1270px) {
+  .thumbList::after {
+    content: "";
+    width: 340px;
+    height: 0px;
+  }
 }
 
 .thumb {
@@ -36,4 +37,23 @@
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
+}
+
+@media (max-width: 1270px) {
+  .thumbList {
+    flex-direction: column;
+    align-content: center;
+    padding: 0;
+    background-color: #ffffff;
+    width: 100%;
+  }
+
+  .thumb {
+    width: 100%;
+    height: 255px;
+  }
+
+  .thumb h2 {
+    font-size: 16px;
+  }
 }

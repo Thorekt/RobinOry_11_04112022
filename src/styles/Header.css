@@ -7,3 +7,17 @@ header img {
   width: 210px;
   height: 68px;
 }
+
+@media (max-width: 1270px) {
+  header img {
+    width: 145px;
+    height: 47px;
+  }
+}
+
+@media (max-width: 600px) {
+  header img {
+    width: 93px;
+    height: 30px;
+  }
+}

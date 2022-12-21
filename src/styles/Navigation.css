@@ -13,3 +13,17 @@ nav a {
   text-decoration: none;
   color: #ff6060;
 }
+
+@media (max-width: 1270px) {
+  nav ul {
+    font-size: 18px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    font-size: 12px;
+    gap: 5px;
+  }
+}

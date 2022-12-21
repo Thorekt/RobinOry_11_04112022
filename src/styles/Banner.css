@@ -25,3 +25,21 @@
   position: relative;
   z-index: 1;
 }
+
+@media (max-width: 1270px) {
+  .banner {
+    height: 111px;
+    justify-content: start;
+  }
+  .banner h2 {
+    margin-left: 16px;
+    margin-right: 16px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .banner h2 {
+    font-size: 18px;
+  }
+}
