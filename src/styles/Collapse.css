@@ -8,7 +8,7 @@
   color: #ffffff;
   background-color: #ff6060;
   border-radius: 10px;
-  height: 47px;
+  height: 52px;
   position: relative;
 }
 
@@ -43,4 +43,24 @@
   margin: 0;
   padding: 0;
   overflow: break-word;
+}
+
+@media (max-width: 1270px) {
+  .collapse .name {
+    height: 30px;
+    border-radius: 5px;
+  }
+  .collapse .name span {
+    top: 6px;
+    font-size: 13px;
+  }
+  .collapse .name img {
+    right: 10px;
+    top: 13px;
+    width: 9px;
+  }
+  .collapse .content {
+    font-size: 12px;
+    padding: 20px 18px 4px 18px;
+  }
 }

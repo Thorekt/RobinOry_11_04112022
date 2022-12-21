@@ -4,7 +4,6 @@ import Host from "./Host";
 import "../styles/Information.css";
 
 function information({ logement }) {
-  console.log(logement);
   return (
     <div className="information">
       <div className="information_left">

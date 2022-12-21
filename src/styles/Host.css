@@ -15,3 +15,12 @@
   border-radius: 1000px;
   width: 64px;
 }
+
+@media (max-width: 1270px) {
+  .host span {
+    font-size: 12px;
+  }
+  .host img {
+    width: 32px;
+  }
+}

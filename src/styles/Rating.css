@@ -3,3 +3,17 @@
   flex-direction: row;
   gap: 10px;
 }
+
+@media (max-width: 1270px) {
+  .rating img {
+    height: 22px;
+    width: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .rating img {
+    height: 15px;
+    width: 15px;
+  }
+}
