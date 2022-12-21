@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .error h1 {
@@ -20,4 +21,17 @@
   color: #ff6060;
   border-bottom: #ff6060 1px solid;
   font-size: 18px;
+}
+
+@media (max-width: 1270px) {
+  .error h1 {
+    font-size: 96px;
+  }
+  .error span {
+    font-size: 18px;
+    max-width: 80%;
+  }
+  .error a {
+    font-size: 14px;
+  }
 }
