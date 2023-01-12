@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
-function Thumb({ key, logement }) {
+function Thumb({ logement }) {
   return (
-    <Link key={key} to={`/houssing/${logement.id}`}>
-      <div className="thumb">
+    <Link to={`/houssing/${logement.id}`}>
+      <div className='thumb'>
         <img src={logement.cover} alt={logement.title} />
         <h2>{logement.title}</h2>
       </div>
