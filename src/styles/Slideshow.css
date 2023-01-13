@@ -17,6 +17,7 @@
 }
 
 .slideshow .control img {
+  cursor: pointer;
 }
 
 .slideshow .slide {
