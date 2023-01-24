@@ -16,10 +16,12 @@ function Slideshow({pictures}){
 
     return(
         <div className="slideshow">
-            <div className="control">
-                <img src={arrowLeft} alt="arrow-left" onClick={() => setCurrentPicture(currentPicture - 1)}/>
-                <img src={arrowRight} alt="arrow-right" onClick={() => setCurrentPicture(currentPicture + 1)}/>
-            </div>
+                {pictures.length > 1 &&
+                <div className="control">
+                  <img src={arrowLeft} alt="arrow-left" onClick={() => setCurrentPicture(currentPicture - 1)}/>
+                  <img src={arrowRight} alt="arrow-right" onClick={() => setCurrentPicture(currentPicture + 1)}/>
+                  </div>
+                }
             <img className="slide" src={pictures[currentPicture]} alt="Interieur du logement"/>
         </div>
     );
