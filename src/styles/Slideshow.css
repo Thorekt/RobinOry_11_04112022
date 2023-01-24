@@ -20,6 +20,15 @@
   cursor: pointer;
 }
 
+.slideshow .count {
+  position: absolute;
+  z-index: 1;
+  color: #ffffff;
+  bottom: 25px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
 .slideshow .slide {
   position: absolute;
   width: 100%;
